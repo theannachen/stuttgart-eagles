@@ -37,7 +37,7 @@ const FrontPage = () => {
           <Col span={8}>
             <Card>
               <h3>Play</h3>
-              <img src="assets/baller.svg" alt="baller" />
+              <img src="assets/baller.svg" alt="baller" width="18px" />
               <p>See our calendar to find upcoming events.</p>
             </Card>
           </Col>
