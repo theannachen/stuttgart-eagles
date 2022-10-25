@@ -13,7 +13,7 @@ const FrontPage = () => {
         <h3>Volunteer</h3>
         <p>Join our team as a coach, board member, or fundraising organizer.</p>
         <h3>Donate</h3>
-        <p>Your donations fund tournaments, training materials, and community projects.</p>
+        <p>Your donations fund tournaments, training materials, and community projects. Thank you!</p>
       </div>
     );
 }
