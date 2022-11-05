@@ -1,0 +1,89 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.title {
+    padding: 7.5% 0 ;
+    background-position: center;
+    background-image: url("../../public/assets/victory_cropped.jpg");
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    margin-bottom: 0;
+}
+
+.title-text {
+    margin: 0;
+    width: 100%;
+    background-color: rgba(83, 80, 80, 0.7);
+}
+
+.title h3 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+    padding-bottom: 10px;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.aboutus {
+    padding: 1.5em 0;
+    font-size: 1.3em;
+}
+
+.aboutus h2 {
+    font-weight: 600;
+}
+
+.ant-card {
+    height: 15em;
+    margin: 0 5%;
+}
+
+.ant-card-body {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}   
+
+.ant-card-body h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.ant-card-body p {
+    font-size: 1.1em;
+}
+
+.ant-card-body.icon {
+    height: 36px;
+}
+
+.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light{
+    background-color: #f6f6f6;
+    font-size: 1.4em;
+    padding: .25%;
+}
+
+.ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
+    padding: 0 2.5%;
+}
+
+.ant-menu-overflow{
+    flex-direction: row-reverse;
+    padding-right: 4%;
+}

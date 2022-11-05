@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Affix, Menu, Card, Row, Col } from "antd";
-import { UserOutlined, DollarOutlined } from "@ant-design/icons";
 import "antd/dist/antd.css";
-// import "./assets/baller.svg";
+import "./FrontPage.css";
+import "boxicons";
+// todo: add links, add calendar, add footer, add logo to top
 
 const items = [
   { label: "Home", to: "/", key: "home" },
@@ -19,11 +20,15 @@ const FrontPage = () => {
   return (
     <div>
       <Affix>
-        <Menu items={items} mode="horizontal" />
+        <Menu
+          items={items}
+          mode="horizontal" />
       </Affix>
       <div class="title">
-        <h1>Stuttgart Eagles</h1>
-        <h3>Demanding Excellence in Everything We Do</h3>
+        <div class="title-text">
+          <h1>Stuttgart Eagles</h1>
+          <h3>Demanding Excellence in Everything We Do</h3>
+        </div>
       </div>
       <div class="aboutus">
         <h2>What We Do</h2>
@@ -35,33 +40,37 @@ const FrontPage = () => {
       <div class="cards">
         <Row gutter={16}>
           <Col span={8}>
-            <Card>
+            <Card class="parts">
               <h3>Play</h3>
-              <img src="assets/baller.svg" alt="baller" width="18px" />
-              <p>See our calendar to find upcoming events.</p>
-            </Card>
-          </Col>
-          <Col span={8}>
-            <Card>
-              <h3>Volunteer</h3>
-              <UserOutlined />
+              <box-icon name="basketball"></box-icon>
               <p>
-                Join our team as a coach, board member, or fundraising
-                organizer.
+                See upcoming events! Support us at games or sign up for tryouts.
               </p>
             </Card>
           </Col>
           <Col span={8}>
-            <Card>
+            <Card class="parts">
+              <h3>Volunteer</h3>
+              <box-icon name="user"></box-icon>
+              <p>
+                Join our team! We are looking for coaches, board members, and
+                fundraisers.
+              </p>
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card class="parts">
               <h3>Donate</h3>
-              <DollarOutlined />
+              <box-icon name="dollar"></box-icon>
               <p>
                 Your donations fund tournaments, training materials, and
-                community projects. Thank you!
+                projects.
               </p>
             </Card>
           </Col>
         </Row>
+      </div>
+      <div class="calendar">
       </div>
     </div>
   );
