@@ -1,18 +1,32 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Affix, Menu, Card, Row, Col } from "antd";
 import "antd/dist/antd.css";
 import "./FrontPage.css";
 import "boxicons";
+import FullCalendar from "@fullcalendar/react";
+import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import dayGridPlugin from "@fullcalendar/daygrid";
 // todo: add links, add calendar, add footer, add logo to top
 
+let API_KEY = process.env.REACT_APP_API_KEY;
+let CALENDAR_ID = process.env.REACT_APP_CALENDAR_ID;
+
 const items = [
-  { label: <a href="/">Home</a>, key: "home" },
-  { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
-  { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
   {
     label: <a href="/board">Meet The Board</a>,
     key: "board",
+  },
+  { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
+  { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
+  { label: <a href="/">Home</a>, key: "home" },
+  {
+    label: (
+      <a href="/" id="eagle_logo">
+        <img src="/assets/eagle_logo.png" alt="logo" height="50em" />
+      </a>
+    ),
+    key: "logo",
+    id: "eagle_logo",
   },
 ];
 
@@ -75,7 +89,14 @@ const FrontPage = () => {
           </Col>
         </Row>
       </div>
-      <div id="calendar"></div>
+      <div id="calendar">
+        <FullCalendar
+          plugins={[dayGridPlugin, googleCalendarPlugin]}
+          googleCalendarApiKey={API_KEY}
+          events={{ googleCalendarId: CALENDAR_ID }}
+          initialView="dayGridMonth"
+        />
+      </div>
     </div>
   );
 };

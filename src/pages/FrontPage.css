@@ -87,3 +87,15 @@ body {
     flex-direction: row-reverse;
     padding-right: 4%;
 }
+
+.fc {
+    margin: 3em;
+}
+
+.fc-scrollgrid{
+    font-size: 1.3em;
+}
+
+#eagle_logo {
+    margin-right: auto;
+}
