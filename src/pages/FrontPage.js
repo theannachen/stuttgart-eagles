@@ -45,8 +45,18 @@ const FrontPage = () => {
       <div class="aboutus">
         <h2>What We Do</h2>
         <p>
-          The Stuttgart Eagles are a competitive travel basketball team based in
-          Stuttgart, Germany that provides community to deployed families.{" "}
+          Our organization is made up of American military dependent kids whose
+          parents are stationed/working for the United States military in
+          Stuttgart Germany. We are going into our tenth year in 2022 as an
+          organization and our goal continues to be to provide our children the
+          training and practice that is as close to what they can get in America
+          as possible. We play friendly games against local German youth teams
+          and represent the USA in a positive manner, both athletically and in
+          sportsmanship. In addition to the actual basketball, we require our
+          players maintain a high grade point average and have no disciplinary
+          problems at all. Our goal is to not only give our kids a fighting
+          chance athletically with their stateside counterparts, but also to
+          build kids with character.{" "}
         </p>
       </div>
       <div class="cards">
