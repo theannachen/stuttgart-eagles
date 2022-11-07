@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom";
-import { Affix, Menu, Card, Row, Col } from "antd";
+import { Affix, Menu } from "antd";
 import "antd/dist/antd.css";
 import "./FrontPage.css";
 import "boxicons";
@@ -36,6 +35,7 @@ const FrontPage = () => {
         <Menu items={menu_items} mode="horizontal" />
       </Affix>
       <div class="title">
+          <div className = "banner"></div>
         <div class="title-text">
           <h1>Stuttgart Eagles</h1>
           <h3>Demanding Excellence in Everything We Do</h3>
@@ -59,45 +59,7 @@ const FrontPage = () => {
         </p>
       </div>
       <div class="cards">
-        <Row gutter={16}>
-          <Col span={8}>
-            <NavLink to="#calendar">
-              <Card>
-                <h3>Play</h3>
-                <box-icon name="basketball"></box-icon>
-                <p>
-                  See upcoming events! Support us at games or sign up for
-                  tryouts.
-                </p>
-              </Card>
-            </NavLink>
-          </Col>
-          <Col span={8}>
-            <NavLink to="/volunteer">
-              <Card>
-                <h3>Volunteer</h3>
-                <box-icon name="user"></box-icon>
-                <p>
-                  Join our team! We are looking for coaches, board members, and
-                  fundraisers.
-                </p>
-              </Card>
-            </NavLink>
-          </Col>
-          <Col span={8}>
-            <NavLink to="/donate">
-              <Card>
-                <h3>Donate</h3>
-                <box-icon name="dollar"></box-icon>
-                <p>
-                  Your donations fund tournaments, training materials, and
-                  projects.
-                </p>
-              </Card>
-            </NavLink>
-          </Col>
-        </Row>
-
+        <CardItems/>
       </div>
 
 
