@@ -81,8 +81,6 @@ body {
     transform: scale(.98);
 }
 
-
-
 .ant-card-body {
     margin: 0;
     position: absolute;
@@ -107,13 +105,17 @@ body {
 
 .ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light{
     background-color: #272A4B;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.4em;
     padding: .25%;
 }
 
 .ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
     padding: 0 2.5%;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+    color: #f6f6f6;
 }
 
 .ant-menu-overflow{
@@ -131,17 +133,17 @@ body {
 
 #eagle_logo {
     margin-right: auto;
-    width: 70px;
     border-radius: 50px;
     transition: transform, background;
     transition-timing-function: ease;
     transition-duration: 400ms;
-    background: #f6f6f6;
+    background: rgb(246, 246, 246);
 }
+
 #eagle_logo:hover {
     transform: scale(1.05);
-
 }
+
 #eagle_logo:active {
     transform: scale(.98);
 }

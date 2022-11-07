@@ -6,7 +6,7 @@ import "boxicons";
 import FullCalendar from "@fullcalendar/react";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
-import CardItems from "./CardItems";
+import CardItems from "../components/CardItems";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
