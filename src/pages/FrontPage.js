@@ -6,16 +6,14 @@ import "boxicons";
 import FullCalendar from "@fullcalendar/react";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import CardItems from "./CardItems";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
 let CALENDAR_ID = process.env.REACT_APP_CALENDAR_ID;
 
-const items = [
-  {
-    label: <a href="/board">Meet The Board</a>,
-    key: "board",
-  },
+const menu_items = [
+  {label: <a href="/board">Meet The Board</a>, key: "board", },
   { label: <a href="/volunteer">Volunteer</a>, key: "volunteer" }, // which is required
   { label: <a href="/donate">Donate</a>, key: "donate" }, // remember to pass the key prop
   { label: <a href="/">Home</a>, key: "home" },
@@ -30,11 +28,12 @@ const items = [
   },
 ];
 
+
 const FrontPage = () => {
   return (
     <div>
       <Affix>
-        <Menu items={items} mode="horizontal" />
+        <Menu items={menu_items} mode="horizontal" />
       </Affix>
       <div class="title">
         <div class="title-text">
@@ -98,7 +97,11 @@ const FrontPage = () => {
             </NavLink>
           </Col>
         </Row>
+
       </div>
+
+
+
       <div id="calendar">
         <FullCalendar
           plugins={[dayGridPlugin, googleCalendarPlugin]}
