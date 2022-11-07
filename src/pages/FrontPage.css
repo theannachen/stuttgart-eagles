@@ -17,7 +17,7 @@ body {
 .title {
     padding: 14% 0;
     background-position: center;
-    background-image: url("../../public/assets/victory.jpg");
+    background-image: url("../../public/assets/victory.png");
     background-size: cover;
     background-position: center 0%;
 }
