@@ -1,12 +1,17 @@
+/* Team Colors:
+blue: #272A4B    39, 42, 75*/
+/*red: #DB3342   219, 51, 66*/
+/*white: #FFFFFF 255, 255, 255*/
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f6f6f6;
+    background-color: rgba(50, 92, 255, .1);
 }
 
 .title {
     padding: 7.5% 0 ;
     background-position: center;
-    background-image: url("../../public/assets/victory_cropped.jpg");
+    background-image: url("../../public/assets/ballin.jpg");
 }
 
 .title h1 {
@@ -15,14 +20,15 @@ body {
     font-weight: 600;
     color: #fff;
     text-align: center;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 10px #272A4B;
     margin-bottom: 0;
+
 }
 
 .title-text {
     margin: 0;
     width: 100%;
-    background-color: rgba(83, 80, 80, 0.7);
+    background-color: rgba(219, 51, 66, 0.7);
 }
 
 .title h3 {
@@ -31,10 +37,14 @@ body {
     font-weight: 400;
     color: #fff;
     text-align: center;
-    text-shadow: 0 0 10px #000;
     padding-bottom: 10px;
     text-transform: lowercase;
     font-style: italic;
+    text-shadow: 0 0 10px #272A4B;
+}
+
+.menu {
+    color: #FFFFFF;
 }
 
 .aboutus {
@@ -46,10 +56,32 @@ body {
     font-weight: 600;
 }
 
+.card-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .ant-card {
     height: 15em;
-    margin: 0 5%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(50, 92, 255, 0);
+    border-color: #282c34;
+    border-width: 2px;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+
 }
+.ant-card:hover {
+    transform: scale(1.05);
+}
+.ant-card:active {
+    transform: scale(.98);
+}
+
+
 
 .ant-card-body {
     margin: 0;
@@ -58,7 +90,7 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}   
+}
 
 .ant-card-body h3 {
     font-size: 1.5em;
@@ -74,7 +106,8 @@ body {
 }
 
 .ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light{
-    background-color: #f6f6f6;
+    background-color: #272A4B;
+    color: #fff;
     font-size: 1.4em;
     padding: .25%;
 }
@@ -98,6 +131,19 @@ body {
 
 #eagle_logo {
     margin-right: auto;
+    width: 70px;
+    border-radius: 50px;
+    transition: transform, background;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    background: #f6f6f6;
+}
+#eagle_logo:hover {
+    transform: scale(1.05);
+
+}
+#eagle_logo:active {
+    transform: scale(.98);
 }
 
 .aboutus {
