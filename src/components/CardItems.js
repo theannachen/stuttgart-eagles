@@ -1,5 +1,10 @@
 import {useState} from "react";
 import {NavLink} from "react-router-dom";
+import {Card, Row, Col } from "antd";
+import "antd/dist/antd.css";
+import "../pages/FrontPage.css";
+import "boxicons";
+// todo: add links, add calendar, add footer, add logo to top
 
 const CardItems = () => {
 const [carditems, setcarditems] = useState([
@@ -9,15 +14,21 @@ const [carditems, setcarditems] = useState([
 ]);
 return (
 
-        <div className = "card-grid">
+        <div class="card">
+            <Row gutter={16}>
             {carditems.map((carditems) =>
-                (<div className = "ant-card">
+                (
+                    <Col span={8}>
                         <NavLink to={carditems.link}>
+                            <Card>
                             <h3>{carditems.label}</h3>
                             <box-icon name={carditems.icon}></box-icon>
                             <p>{carditems.body}</p>
+                            </Card>
                         </NavLink>
-                </div>))}
+                    </Col>
+                ))}
+            </Row>
         </div>
 
 )

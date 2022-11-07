@@ -3,32 +3,42 @@ blue: #272A4B    39, 42, 75*/
 /*red: #DB3342   219, 51, 66*/
 /*white: #FFFFFF 255, 255, 255*/
 
+:root {
+    --bannertime: .5;
+    --blue: #272A4B;
+    --red: #DB3342;
+}
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgba(50, 92, 255, .1);
+    background-color: rgba(39, 42, 75, .05);
 }
 
 .title {
-    padding: 7.5% 0 ;
+    padding: 14% 0;
     background-position: center;
-    background-image: url("../../public/assets/ballin.jpg");
-}
-
-.title h1 {
-    text-transform: uppercase;
-    font-size: 3.5em;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 10px #272A4B;
-    margin-bottom: 0;
-
+    background-image: url("../../public/assets/victory.jpg");
+    background-size: cover;
+    background-position: center 0%;
 }
 
 .title-text {
     margin: 0;
     width: 100%;
-    background-color: rgba(219, 51, 66, 0.7);
+}
+
+
+.title h1 {
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 15px #272A4B;
+    margin-bottom: 0;
+    animation: slidedown 1s ease;
 }
 
 .title h3 {
@@ -36,29 +46,57 @@ body {
     font-size: 2em;
     font-weight: 400;
     color: #fff;
+    position: relative;
     text-align: center;
     padding-bottom: 10px;
     text-transform: lowercase;
     font-style: italic;
-    text-shadow: 0 0 10px #272A4B;
+    text-shadow: 0 0 15px #272A4B;
+    animation: slidedown 1.2s ease;
+}
+@keyframes slidedown{
+    0%{
+        margin-top: -10px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
 }
 
-.menu {
-    color: #FFFFFF;
+.banner {
+    position: absolute;
+    margin: 0;
+    height: 130px;
+    width: 100%;
+    background-color: rgba(219, 51, 66, 0.7);
+    animation: slidein .5s ease-in;
+}
+@keyframes slidein{
+    0%{
+        transform: skewX(40deg) translateX(-100%);
+    }
+    100%{
+        transform: skewX(0deg) translateX(0%);
+    }
 }
 
 .aboutus {
     padding: 1.5em 0;
     font-size: 1.3em;
+    animation: slidedown 2s ease;
 }
 
 .aboutus h2 {
     font-weight: 600;
-}
-
-.card-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    text-decoration: underline;
+    text-decoration-color: #272A4B;
+    text-decoration-thickness: 8px;
 }
 
 .ant-card {
@@ -69,6 +107,7 @@ body {
     background-color: rgba(50, 92, 255, 0);
     border-color: #282c34;
     border-width: 2px;
+    animation: slidedown;
     transition: transform, background-color;
     transition-timing-function: ease;
     transition-duration: 200ms;
@@ -82,21 +121,21 @@ body {
 }
 
 .ant-card-body {
-    margin: 0;
+    margin-top: 1px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
 }
 
 .ant-card-body h3 {
     font-size: 1.5em;
     font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #272A4B;
+    text-decoration-thickness: 1.5px;
 }
 
 .ant-card-body p {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .ant-card-body.icon {
