@@ -32,7 +32,7 @@ const menu_items = [
 const FrontPage = () => {
   return (
     <div>
-      <Affix>
+      <Affix className="menu">
         <Menu items={menu_items} mode="horizontal" />
       </Affix>
       <div class="title">
