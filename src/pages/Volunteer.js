@@ -1,7 +1,7 @@
 const Volunteer = () => {
     return (
         <div>
-            <p>LOL</p>
+            <p>Coming soon!</p>
         </div>
     )
 }
