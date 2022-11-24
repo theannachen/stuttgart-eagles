@@ -1,9 +1,18 @@
+import "./FrontPage.css";
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+
 const Donate = () => {
-  return (
-    <div>
-      <p>LOL</p>
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <div className="bodyParagraph">
+                <h1>Donate</h1>
+                <p>The team relies on your generous donations.</p>
+            </div>
+            <Footer/>
+        </div>
+    );
 };
 
 export default Donate;
