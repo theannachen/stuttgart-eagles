@@ -1,0 +1,42 @@
+
+.ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
+    padding: 0 2.5%;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+    color: #f6f6f6;
+}
+
+.ant-menu-overflow{
+    flex-direction: row-reverse;
+    padding-right: 4%;
+}
+
+.footer {
+    align-content: end;
+    text-align: center;
+    font-family: "Calibri Light";
+    white-space: pre-line;
+    font-size: 18px;
+    background-color: #272A4B;
+    color: #ffffff;
+    padding: 0;
+}
+
+#eagle_logo {
+    margin-right: auto;
+    border-radius: 50px;
+    size: 20px;
+    transition: transform, background;
+    transition-timing-function: ease;
+    transition-duration: 400ms;
+    background: rgb(246, 246, 246);
+}
+
+#eagle_logo:hover {
+    transform: scale(1.05);
+}
+
+#eagle_logo:active {
+    transform: scale(.98);
+}
