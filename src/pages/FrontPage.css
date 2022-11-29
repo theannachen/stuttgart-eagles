@@ -1,6 +1,7 @@
 
 .title {
     padding: 14% 0;
+    background-position: center;
     background-image: url("../../public/assets/titleCollage.jpg");
     background-size: cover;
     background-position: center 0;

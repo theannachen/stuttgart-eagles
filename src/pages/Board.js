@@ -27,7 +27,7 @@ const people = [
         image: "/assets/shawn.jpg",
     },
     {
-        name: "Currently Unnamed",
+        name: "Nadia Pontif",
         role: "Social Media Coordinator",
         image: "/assets/currently_unnamed.jpg",
     },
