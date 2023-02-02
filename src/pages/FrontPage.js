@@ -22,6 +22,7 @@ const FrontPage = () => {
     return (
         <div>
             <Header/>
+            <audio id="my_audio" src="star_spangled_banner.mp3" loop="loop" autoPlay="autoplay" volume="0.5"></audio>
             <div class="title">
                 <div className="banner"></div>
                 <div class="title-text">

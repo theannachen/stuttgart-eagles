@@ -17,6 +17,10 @@ body {
     animation: slidedown 2s ease;
 }
 
+.wrapper {
+    margin: 20px;
+}
+
 .bodyParagraph h1 {
     font-weight: 2000;
     color: #272A4B;
@@ -62,7 +66,7 @@ body {
     font-size: 18px;
     background-color: #272A4B;
     color: #ffffff;
-    padding: 0;
+    padding: 2px;
 }
 
 #eagle_logo {
