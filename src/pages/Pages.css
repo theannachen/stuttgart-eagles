@@ -17,6 +17,24 @@ body {
     animation: slidedown 2s ease;
 }
 
+.underline {
+    position: relative;
+    width: 0px;
+    height: 7px;
+    background-image: linear-gradient(to right, #ff0000, #DB3342);
+    border-radius: 3px;
+    animation: slidein 2000ms ease forwards;
+    animation-delay: 1200ms;
+}
+@keyframes slidein {
+    0% {
+       width: 0px;
+    } 100% {
+        width: 100px;
+          }
+}
+
+
 .bodyParagraph h1 {
     font-weight: 2000;
     color: #272A4B;

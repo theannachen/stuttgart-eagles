@@ -13,10 +13,10 @@ img.boardpic {
 
 
 .boardcard h3 {
+    transform: translateY(-45%);
+    whitespace: nowrap;
     font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 1px;
+    font-style: italic;
 }
 
 

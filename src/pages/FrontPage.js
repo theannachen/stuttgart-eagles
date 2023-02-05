@@ -6,6 +6,7 @@ import FullCalendar from "@fullcalendar/react";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import CardItems from "../components/CardItems";
+import Gallery from "./Gallery";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 // todo: add links, add calendar, add footer, add logo to top
@@ -50,8 +51,7 @@ const FrontPage = () => {
             <div class="cards">
                 <CardItems/>
             </div>
-
-
+            <br></br><br></br>
             <div id="calendar" class="hidden">
                 <FullCalendar
                     plugins={[dayGridPlugin, googleCalendarPlugin]}
@@ -60,6 +60,11 @@ const FrontPage = () => {
                     initialView="dayGridMonth"
                 />
             </div>
+            <div className="bodyParagraph">
+                <br></br>
+                <h2>-Gallery-</h2>
+            </div>
+            <Gallery />
             <Footer/>
         </div>
     );

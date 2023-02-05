@@ -2,11 +2,10 @@ import {Affix, Menu} from "antd";
 import "antd/dist/antd.css";
 import "../pages/Pages.css";
 import "../pages/FrontPage.css";
-import "boxicons";
 
 const Header = () => {
     const menu_items = [
-        {label: <a href="/board">Meet The Board</a>, key: "board",},
+        {label: <a href="/board">Meet The Board</a>, key: "bod",},
         {label: <a href="/volunteer">Volunteer</a>, key: "volunteer"}, // which is required
         {label: <a href="/donate">Donate</a>, key: "donate"}, // remember to pass the key prop
         {label: <a href="/">Home</a>, key: "home"},

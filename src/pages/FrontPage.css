@@ -114,7 +114,8 @@ body.loaded .title h3 {
 }
 
 .ant-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    background-color: rgba(255, 121, 100, .2);
 }
 
 .ant-card:active {

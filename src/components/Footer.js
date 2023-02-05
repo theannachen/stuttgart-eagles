@@ -2,12 +2,11 @@ import {Affix} from "antd";
 import "antd/dist/antd.css";
 import "../pages/Pages.css";
 import "../pages/FrontPage.css";
-import "boxicons";
 
 const Footer = () => {
 
     return (
-        <Affix className="footer">
+        <Affix>
             <div className="footer">
                 <p></p>
                 <p>

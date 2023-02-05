@@ -9,6 +9,7 @@ const Donate = () => {
             <div className="bodyParagraph">
                 <h1>Donate</h1>
                 <p>The team relies on your generous donations.</p>
+                <div className="underline"></div>
             </div>
             <Footer/>
         </div>
