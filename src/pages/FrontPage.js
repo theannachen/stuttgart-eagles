@@ -28,7 +28,7 @@ const FrontPage = () => {
         <div>
             <Header/>
             <audio id="audio" src="star_spangled_banner.mp3" loop="loop" volume="0.5"></audio>
-            <a onClick="document.getElementById('audio').play()">Play Music</a>
+            {/*<a onClick="document.getElementById('audio').play()">Play Music</a>*/}
             <div className="wrapper">
             <div class="title">
                 <div className="banner"></div>
