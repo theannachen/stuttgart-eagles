@@ -7,11 +7,12 @@ const Footer = () => {
 
     return (
         <Affix>
+            <br></br><br></br><br></br><br></br><br></br>
             <div className="footer">
                 <p></p>
                 <p>
                     Contact Us: <br></br>
-                    address • phone number • email
+                    stuttgarteaglesbasketball@googlemail.com
                 </p>
             </div>
         </Affix>

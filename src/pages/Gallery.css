@@ -7,6 +7,10 @@
     margin: 7px 7px 7px 7px;
 }
 
+img.gallerytemplate {
+    position: absolute;
+}
+
 img.galleryimg {
     width: 400px;
     aspect-ratio: auto;

@@ -2,19 +2,34 @@ import "./Donate.css";
 import "./Pages.css";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import {Card, Col, Row} from "antd";
+import {NavLink} from "react-router-dom";
 
 const Donate = () => {
     return (
         <div>
             <Header/>
+            <div class="card">
+                <Row gutter={16}>
+                            <Col span={8}>
+                                    <Card>
+                                        <h3></h3>
+                                        <p></p>
+                                    </Card>
+                            </Col>
+                </Row>
+            </div>
             <div className="wrapper">
             <div className="bodyParagraph">
                 <h1>Donate</h1>
-<<<<<<< HEAD
-                <p>The team relies on your generous donations.</p>
                 <div className="underline"></div>
-=======
-                <p>Our team relies on your generous donations. Please use one of the following methods to donate:</p>
+                <p>
+                    We are asking you to invest in our organization and to continue our
+                    efforts in supporting this underserved community. Your support will
+                    go towards tournament registration, player transportation,
+                    hostel/hotel fees, and maintenance of club equipment. <br></br>
+                    Please use one of the following methods to donate:
+                </p>
                 </div>
                 <div className="donate-list">
                 <h3>Cash</h3>
@@ -61,9 +76,8 @@ const Donate = () => {
                     <li>Shawn Gilliland will send you a payment request for your payment.</li>
                 </ul>
             </div>
->>>>>>> 0a68c21d6db17e9699042582c73fd1a5611c1b77
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     );
 };

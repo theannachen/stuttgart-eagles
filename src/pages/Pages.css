@@ -18,7 +18,8 @@ body {
 }
 
 .wrapper {
-    margin: 20px;
+    position: relative;
+    min-height: 100vh;
 }
 
 .bodyParagraph h1 {
@@ -59,14 +60,15 @@ body {
 }
 
 .footer {
-    align-content: end;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
     text-align: center;
     font-family: "Calibri Light";
     white-space: pre-line;
     font-size: 18px;
     background-color: #272A4B;
     color: #ffffff;
-    padding: 2px;
 }
 
 #eagle_logo {

@@ -52,6 +52,7 @@ const Board = () => {
     return (
         <div>
             <Header/>
+            <div className="wrapper">
             <div className="bodyParagraph">
                 <h1>Meet the Board</h1>
                 <br></br>
@@ -69,6 +70,7 @@ const Board = () => {
                 </Row>
             </div>
             <Footer/>
+            </div>
         </div>
     );
 };
