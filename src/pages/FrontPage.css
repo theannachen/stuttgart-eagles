@@ -1,142 +1,149 @@
+
 .title {
-  padding: 14% 0;
-  background-position: center;
-  background-image: url("../../public/assets/titleCollage.jpg");
-  background-size: cover;
-  background-position: center 0;
+    padding: 14% 0;
+    background-position: center;
+    background-image: url("../../public/assets/titleCollage.jpg");
+    background-size: cover;
+    background-position: center 0;
 }
 
 .title-text {
-  margin: 0;
-  width: 100%;
+    margin: 0;
+    width: 100%;
 }
 
+
 .title h1 {
-  opacity: 0;
-  text-transform: uppercase;
-  position: relative;
-  text-align: center;
-  font-size: 3.5em;
-  font-weight: 600;
-  color: #fff;
-  text-shadow: 0 0 15px #272a4b;
-  margin-bottom: 0;
+    opacity: 0;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 15px #272A4B;
+    margin-bottom: 0;
 }
 
 .title h3 {
-  opacity: 0;
-  margin-top: 0;
-  font-size: 2em;
-  font-weight: 400;
-  color: #fff;
-  position: relative;
-  text-align: center;
-  padding-bottom: 10px;
-  text-transform: lowercase;
-  font-style: italic;
-  text-shadow: 0 0 15px #272a4b;
+    opacity: 0;
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: lowercase;
+    font-style: italic;
+    text-shadow: 0 0 15px #272A4B;
 }
 
+
 @keyframes slidedown {
-  0% {
-    margin-top: -10px;
-    opacity: 0;
-  }
-  50% {
-    margin-top: -10px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
+    0% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 .banner {
-  opacity: 0;
-  position: absolute;
-  margin: 0;
-  height: 130px;
-  width: 100%;
-  background-color: rgba(219, 51, 66, 0.7);
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    height: 130px;
+    width: 100%;
+    background-color: rgba(219, 51, 66, 0.7);
 }
 
 @keyframes slidein {
-  0% {
-    transform: skewX(40deg) translateX(-100%);
-  }
-  100% {
-    transform: skewX(0deg) translateX(0%);
-  }
+    0% {
+        transform: skewX(40deg) translateX(-100%);
+    }
+    100% {
+        transform: skewX(0deg) translateX(0%);
+    }
 }
 
 body.loaded .banner {
-  opacity: 1;
-  animation: slidein 0.5s ease-in;
+    opacity: 1;
+    animation: slidein .5s ease-in;
 }
 
 body.loaded .title h1 {
-  opacity: 1;
-  animation: slidedown 1s ease;
+    opacity: 1;
+    animation: slidedown 1s ease;
 }
 
 body.loaded .title h3 {
-  opacity: 1;
-  animation: slidedown 1.2s ease;
+    opacity: 1;
+    animation: slidedown 1.2s ease;
 }
 
+
 .hidden {
-  opacity: 1;
-  transition: all 1s;
+    opacity: 1;
+    transition: all 1s;
 }
 
 .shown {
-  opacity: 1;
+    opacity: 1;
 }
 
 .ant-card {
-  height: 15em;
-  margin: 0;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: rgba(50, 92, 255, 0);
-  border-color: #282c34;
-  border-width: 2px;
-  animation: slidedown;
-  transition: transform, background-color;
-  transition-timing-function: ease;
-  transition-duration: 200ms;
+    height: 15em;
+    margin: 0;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(50, 92, 255, 0);
+    border-color: #282c34;
+    border-width: 2px;
+    animation: slidedown;
+    transition: transform, background-color;
+    transition-timing-function: ease;
+    transition-duration: 200ms;
+
 }
 
 .ant-card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .ant-card:active {
-  transform: scale(0.98);
+    transform: scale(.98);
 }
 
 .ant-card-body {
-  margin-top: 1px;
-  position: absolute;
+    margin-top: 1px;
+    position: absolute;
+
 }
 
 .ant-card-body h3 {
-  font-size: 1.5em;
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: #272a4b;
-  text-decoration-thickness: 1.5px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #272A4B;
+    text-decoration-thickness: 1.5px;
 }
 
 .ant-card-body p {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .ant-card-body.icon {
-  height: 36px;
+    height: 36px;
 }
 
 .fc-scrollgrid {
-  font-size: 1.3em;
+    font-size: 1.3em;
 }
+
