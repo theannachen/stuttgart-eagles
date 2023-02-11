@@ -1,12 +1,13 @@
-.donate-list li, .donate-list h3{
-    text-align: left;
-    font-size: 1.3em;
+.donate-list li,
+.donate-list h3 {
+  text-align: left;
+  font-size: 1.3em;
 }
 
 .donate-list h3 {
-    font-size: 1.3em;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 2px;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #272a4b;
+  text-decoration-thickness: 2px;
 }

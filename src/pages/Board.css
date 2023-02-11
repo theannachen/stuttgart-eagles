@@ -1,22 +1,18 @@
-
 img.boardpic {
-    align-content: center;
-    width: 280px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #272A4B;
+  align-content: center;
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #272a4b;
 }
 
 .boardcard {
-    position: relative;
-    align-content: center;
+  position: relative;
+  align-content: center;
 }
-
 
 .boardcard h3 {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 1px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #272a4b;
+  text-decoration-thickness: 1px;
 }
-
-

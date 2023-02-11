@@ -1,42 +1,64 @@
-
 .ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child {
-    padding: 0 2.5%;
+  padding: 0 2.5%;
 }
 
 .ant-menu-horizontal > .ant-menu-item a {
-    color: #f6f6f6;
+  color: #f6f6f6;
 }
 
-.ant-menu-overflow{
-    flex-direction: row-reverse;
-    padding-right: 4%;
+.ant-menu-overflow {
+  flex-direction: row-reverse;
+  padding-right: 4%;
 }
 
 .footer {
-    align-content: end;
-    text-align: center;
-    font-family: "Calibri Light";
-    white-space: pre-line;
-    font-size: 18px;
-    background-color: #272A4B;
-    color: #ffffff;
-    padding: 0;
+  align-content: end;
+  text-align: center;
+  font-family: "Calibri Light";
+  white-space: pre-line;
+  font-size: 18px;
+  background-color: #272a4b;
+  color: #ffffff;
+  padding: 0;
 }
 
 #eagle_logo {
-    margin-right: auto;
-    border-radius: 50px;
-    size: 20px;
-    transition: transform, background;
-    transition-timing-function: ease;
-    transition-duration: 400ms;
-    background: rgb(246, 246, 246);
+  margin-right: auto;
+  border-radius: 50px;
+  size: 20px;
+  transition: transform, background;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+  background: rgb(246, 246, 246);
 }
 
 #eagle_logo:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #eagle_logo:active {
-    transform: scale(.98);
+  transform: scale(0.98);
+}
+
+#login {
+  border-radius: 50px;
+  background: rgb(246, 246, 246);
+  color: #272a4b;
+  font-weight: bold;
+  padding: 12px 20px 16px 20px;
+  transition: font-size;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+#login:hover {
+  font-size: 1.05em;
+}
+
+#login:active {
+  font-size: 1.05em;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after {
+  display: none;
 }
