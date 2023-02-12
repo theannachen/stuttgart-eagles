@@ -25,6 +25,7 @@ const FrontPage = () => {
         <div>
             <Header/>
             <div className="wrapper">
+            <Gallery />
             <div class="title">
                 <div className="banner"></div>
                 <div class="title-text">
@@ -68,7 +69,6 @@ const FrontPage = () => {
                 <br></br>
                 <h2>-Gallery-</h2>
             </div>
-            <Gallery />
             <Footer/>
             </div>
         </div>

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: start;
     align-content: start;
-    margin: 7px 7px 7px 7px;
+    /* margin: 7px 7px 7px 7px; */
 }
 
 img.gallerytemplate {
@@ -18,8 +18,12 @@ img.galleryimg {
     transition: box-shadow 300ms;
 }
 
+.image-gallery-image {
+    background-color: #F3F4F5;
+}
 
 img.galleryimg:hover {
     box-shadow: 0 4px 4px 2px #DB3342;
+
 }
 
