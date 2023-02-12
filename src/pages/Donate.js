@@ -9,16 +9,6 @@ const Donate = () => {
     return (
         <div>
             <Header/>
-            <div class="card">
-                <Row gutter={16}>
-                            <Col span={8}>
-                                    <Card>
-                                        <h3></h3>
-                                        <p></p>
-                                    </Card>
-                            </Col>
-                </Row>
-            </div>
             <div className="wrapper">
             <div className="bodyParagraph">
                 <h1>Donate</h1>
