@@ -6,6 +6,7 @@ import FullCalendar from "@fullcalendar/react";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import CardItems from "../components/CardItems";
+import Gallery from "./Gallery";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 // todo: add links, add calendar, add footer, add logo to top
@@ -19,10 +20,12 @@ window.onload = function () {
 }
 
 const FrontPage = () => {
+
     return (
         <div>
             <Header/>
-            <audio id="my_audio" src="star_spangled_banner.mp3" loop="loop" autoPlay="autoplay" volume="0.5"></audio>
+            <div className="wrapper">
+            <Gallery />
             <div class="title">
                 <div className="banner"></div>
                 <div class="title-text">
@@ -30,29 +33,30 @@ const FrontPage = () => {
                     <h3>Demanding Excellence in Everything We Do</h3>
                 </div>
             </div>
-
-            <div class="bodyParagraph">
+                <div class="bodyParagraph">
                 <h2 class="hidden">What We Do</h2>
                 <p class="hidden">
-                    Our organization is made up of American military dependent kids whose
-                    parents are stationed/working for the United States military in
-                    Stuttgart Germany. We are going into our tenth year in 2022 as an
-                    organization and our goal continues to be to provide our children the
-                    training and practice that is as close to what they can get in America
-                    as possible. We play friendly games against local German youth teams
-                    and represent the USA in a positive manner, both athletically and in
-                    sportsmanship. In addition to the actual basketball, we require our
-                    players maintain a high grade point average and have no disciplinary
-                    problems at all. Our goal is to not only give our kids a fighting
-                    chance athletically with their stateside counterparts, but also to
-                    build kids with character.{" "}
+                    The Stuttgart Eagles Basketball Club (SEBC) is made up of Department
+                    of Defense dependents and local youth within the Stuttgart, Germany
+                    community. We are going into our tenth year in 2023 as an organization.
+                    We operate as a non-profit organization with 100% volunteers.
+                    SEBC travels locally and throughout Europe dominating tournaments during
+                    basketball season and competing against over 30 International Clubs annually.
+                    We represent the USA in a positive manner, both athletically and in sportsmanship.
+                    SEBC bridges a gap in the overseas military community for school-age children
+                    who are not afforded the experience of competitive Amateur Athletic Union (AAU)
+                    and middle school sports during their adolescent years due to their parents
+                    serving our Nation abroad. We are also excited to start an Eagles Cheer
+                    program this year!  In addition to basketball and cheer, we require our players
+                    maintain a high grade point average and have no disciplinary problems.
+                    Our goal is to not only give our kids a fighting chance athletically with their
+                    stateside counterparts, but also to build kids with character.{" "}
                 </p>
             </div>
             <div class="cards">
                 <CardItems/>
             </div>
-
-
+            <br></br><br></br>
             <div id="calendar" class="hidden">
                 <FullCalendar
                     plugins={[dayGridPlugin, googleCalendarPlugin]}
@@ -61,7 +65,12 @@ const FrontPage = () => {
                     initialView="dayGridMonth"
                 />
             </div>
+            <div className="bodyParagraph">
+                <br></br>
+                <h2>-Gallery-</h2>
+            </div>
             <Footer/>
+            </div>
         </div>
     );
 };

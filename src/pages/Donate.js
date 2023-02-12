@@ -2,6 +2,8 @@ import "./Donate.css";
 import "./Pages.css";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import {Card, Col, Row} from "antd";
+import {NavLink} from "react-router-dom";
 
 const Donate = () => {
     return (
@@ -10,7 +12,14 @@ const Donate = () => {
             <div className="wrapper">
             <div className="bodyParagraph">
                 <h1>Donate</h1>
-                <p>Our team relies on your generous donations. Please use one of the following methods to donate:</p>
+                <div className="underline"></div>
+                <p>
+                    We are asking you to invest in our organization and to continue our
+                    efforts in supporting this underserved community. Your support will
+                    go towards tournament registration, player transportation,
+                    hostel/hotel fees, and maintenance of club equipment. <br></br>
+                    Please use one of the following methods to donate:
+                </p>
                 </div>
                 <div className="donate-list">
                 <h3>Cash</h3>
@@ -57,8 +66,8 @@ const Donate = () => {
                     <li>Shawn Gilliland will send you a payment request for your payment.</li>
                 </ul>
             </div>
+                <Footer/>
             </div>
-            <Footer/>
         </div>
     );
 };
