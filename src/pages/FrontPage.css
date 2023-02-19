@@ -152,3 +152,46 @@ body.loaded .title h3 {
     position: absolute;
 }
 
+ul.eventsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.event {
+    display: flex;
+    margin: 1em;
+    background: #b9cef9;
+}
+
+p.date {
+    font-size: 1.5em;
+    padding: 2em;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+    background: #272A4B;
+}
+
+div.info {
+    text-align: left;
+    padding: 2em;
+    margin: auto 0;
+}
+div.info h3 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+}
+
+div.info p {
+    font-size: 1.5em;
+    margin: 0;
+}
+h2.eventsList {
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #272A4B;
+    text-decoration-thickness: 4px;
+}
