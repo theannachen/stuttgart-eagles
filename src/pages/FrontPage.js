@@ -9,6 +9,7 @@ import CardItems from "../components/CardItems";
 import Gallery from "./Gallery";
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { useEffect, useState } from "react";
 // todo: add links, add calendar, add footer, add logo to top
 
 let API_KEY = process.env.REACT_APP_API_KEY;
@@ -20,6 +21,18 @@ window.onload = function () {
 }
 
 const FrontPage = () => {
+  const [events, setEvents] = useState([]);
+    useEffect(() => {
+      fetch(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&timeMin=${new Date().toISOString()}&showDeleted=false&singleEvents=true&maxResults=10&orderBy=startTime`)
+      .then((response) => response.json())
+      .then((data) => setEvents(data.items.slice(0, 15)));
+    }, []);
+
+    function fixDate(date) {
+        let d = new Date(date);
+        let time = d.toLocaleTimeString();
+        return `${d.toLocaleDateString()} \n ${time.substr(0, time.lastIndexOf(":")) + time.substr(time.lastIndexOf(" "), time.length)}`;
+    }
 
     return (
         <div>
@@ -57,17 +70,17 @@ const FrontPage = () => {
                 <CardItems/>
             </div>
             <br></br><br></br>
-            <div id="calendar" class="hidden">
-                <FullCalendar
-                    plugins={[dayGridPlugin, googleCalendarPlugin]}
-                    googleCalendarApiKey={API_KEY}
-                    events={{googleCalendarId: CALENDAR_ID}}
-                    initialView="dayGridMonth"
-                />
-            </div>
-            <div className="bodyParagraph">
-                <br></br>
-                <h2>-Gallery-</h2>
+            <div id="eventsList" >
+            <h2 class="eventsList">Upcoming Events</h2>
+              <ul class="eventsList">
+                {events.map((event) => (
+                  <li key={event.id} class="event" style={{whiteSpace: "pre-line"}}>
+                    <p class="date">{fixDate(event.start.dateTime)}</p>
+                    <div class="info"><h3>{event.summary}</h3>
+                    {event.location && <p>{event.location}</p>}</div>
+                  </li>
+                ))}
+              </ul>
             </div>
             <Footer/>
             </div>
