@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <Affix className="menu">
-            <audio id="audio" ref={myRef} src="star_spangled_banner.mp3" loop="loop" volume="0.5"></audio>
+            <audio id="audio" ref={myRef} src="good-vibes-127577.mp3" loop="loop" volume="0.5"></audio>
             <Menu items={menu_items} mode="horizontal"/>
         </Affix>
     )
