@@ -9,11 +9,8 @@ const Footer = () => {
         <Affix>
             <br></br><br></br><br></br><br></br><br></br>
             <div className="footer">
-                <p></p>
-                <p>
-                    Contact Us: <br></br>
-                    stuttgarteaglesbasketball@googlemail.com
-                </p>
+                <h>Contact us: </h>
+                <p> stuttgarteaglesbasketball@googlemail.com </p>
             </div>
         </Affix>
     )

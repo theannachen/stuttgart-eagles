@@ -30,17 +30,17 @@ const CardItems = () => {
     ]);
     return (
         <div class="card">
-            <Row gutter={16}>
+            <Row gutter={6} justify="space-around" align="middle" style={{marginBottom: 50}}>
                 {carditems.map((carditems) =>
                     (
-                        <Col span={8}>
+                        <Col span={11}>
                             <NavLink to={carditems.link}>
                                 <Card>
                                     <h3>{carditems.label}</h3>
-                                    <box-icon name={carditems.icon}></box-icon>
                                     <p>{carditems.body}</p>
                                 </Card>
                             </NavLink>
+                            <br></br>
                         </Col>
                     ))}
             </Row>

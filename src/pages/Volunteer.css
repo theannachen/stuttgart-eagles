@@ -1,0 +1,43 @@
+
+
+.vol-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 20px 0px 20px;
+    grid-row-gap: 30px;
+    align-items: center;
+}
+
+.vol-grid h2{
+    padding: 0px 14px 0px 14px;
+}
+
+.vol-grid p {
+    padding: 1px 14px 1px 14px;
+}
+
+.left {
+    text-align: start;
+}
+
+.right {
+    text-align: end;
+}
+
+img.coachingpic {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 6px 6px #DB3342;
+}
+
+img.boardmempic {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 6px 6px #DB3342;
+}
+
+img.fundraisepic {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0px 6px 6px #DB3342;
+}

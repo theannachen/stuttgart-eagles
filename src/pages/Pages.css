@@ -10,39 +10,41 @@ body {
     background-color: rgba(39, 42, 75, .05);
 }
 
-.bodyParagraph {
-    font-family: "Century Gothic";
-    padding: 1.5em 0;
-    font-size: 1.3em;
-    animation: slidedown 2s ease;
-}
-
 .wrapper {
     position: relative;
     min-height: 100vh;
 }
 
+.bodyParagraph {
+    font-family: "Century Gothic";
+    animation: slidedown 2s ease;
+}
+
+.bodyParagraph p {
+    padding: 0em 3em 0em 3em;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
 .bodyParagraph h1 {
-    font-weight: 10000;
+    font-size: 4em;
+    -webkit-text-stroke-width: 2px;
     color: #272A4B;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 4px;
 }
 
 .bodyParagraph h2 {
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 4px;
+    font-size: 2.5em;
+    font-style: italic;
+    -webkit-text-stroke-width: 1.5px;
 }
 
 
 .ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light{
-    font-family: Calibri;
+    font-family: "Century Gothic";
     background-color: #272A4B;
     color: #ffffff;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    font-weight: bold;
     padding: .25%;
 }
 
@@ -52,6 +54,11 @@ body {
 
 .ant-menu-horizontal > .ant-menu-item a {
     color: #f6f6f6;
+}
+
+.ant-menu-horizontal > .ant-menu-item a:hover {
+    color: #ff6074;
+    text-decoration: none;
 }
 
 .ant-menu-overflow{
@@ -64,28 +71,39 @@ body {
     width: 100%;
     bottom: 0px;
     text-align: center;
-    font-family: "Calibri Light";
-    white-space: pre-line;
-    font-size: 18px;
-    background-color: #272A4B;
+    padding-top: 8px;
+    font-family: "Century Gothic";
+    font-size: 1.3em;
+    background-color: #2c2e4b;
     color: #ffffff;
+}
+
+.footer h {
+    font-weight: bold;
+    transform: translateY(10%);
+    padding-bottom: 0px;
 }
 
 #eagle_logo {
     margin-right: auto;
     border-radius: 50px;
-    transition: transform, background;
+    height: 40%;
+    transform: translateX(-25%);
+    transition: transform;
     transition-timing-function: ease;
-    transition-duration: 400ms;
-    background: rgb(246, 246, 246);
+    transition-duration: 200ms;
+    outline: #DB3342;
+    outline-width: 4px;
 }
 
 #eagle_logo:hover {
     transform: scale(1.05);
+    transform: translateX(-25%);
 }
 
 #eagle_logo:active {
     transform: scale(.98);
+    transform: translateX(-25%);
 }
 
 .aboutus {

@@ -25,7 +25,7 @@ const Header = () => {
         {
             label: (
                 <a href="/" id="eagle_logo">
-                    <img src="/assets/eagle_logo.png" alt="logo" height="50em"/>
+                    <img src="/assets/basketball-icon.png" alt="logo" height="50em"/>
                 </a>
             ),
             key: "logo",
