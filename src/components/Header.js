@@ -25,7 +25,7 @@ const Header = () => {
         {
             label: (
                 <a href="/" id="eagle_logo">
-                    <img src="/assets/eagle_logo.png" alt="logo" height="50em"/>
+                    <img className="eagle-photo" src="/assets/basketball-icon-header.png" alt="logo" height="50em"/>
                 </a>
             ),
             key: "logo",
@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <Affix className="menu">
-            <audio id="audio" ref={myRef} src="good-vibes-127577.mp3" loop="loop" volume="0.5"></audio>
+            <audio id="audio" ref={myRef} src="/assets/Ball_so_Hard.mp3" loop="loop" volume="0.5"></audio>
             <Menu items={menu_items} mode="horizontal"/>
         </Affix>
     )

@@ -21,11 +21,11 @@ window.onload = function () {
 }
 
 const FrontPage = () => {
-  const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState([]);
     useEffect(() => {
-      fetch(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&timeMin=${new Date().toISOString()}&showDeleted=false&singleEvents=true&maxResults=10&orderBy=startTime`)
-      .then((response) => response.json())
-      .then((data) => setEvents(data.items.slice(0, 15)));
+        fetch(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&timeMin=${new Date().toISOString()}&showDeleted=false&singleEvents=true&maxResults=10&orderBy=startTime`)
+            .then((response) => response.json())
+            .then((data) => setEvents(data.items.slice(0, 15)));
     }, []);
 
     function fixDate(date) {
@@ -38,51 +38,64 @@ const FrontPage = () => {
         <div>
             <Header/>
             <div className="wrapper">
-            <Gallery />
-            <div class="title">
-                <div className="banner"></div>
-                <div class="title-text">
-                    <h1>Stuttgart Eagles</h1>
-                    <h3>Demanding Excellence in Everything We Do</h3>
-                </div>
-            </div>
-                <div class="bodyParagraph">
-                <h2 class="hidden">What We Do</h2>
+                <div className="title_screen"></div>
                 <p class="hidden">
-                    The Stuttgart Eagles Basketball Club (SEBC) is made up of Department
-                    of Defense dependents and local youth within the Stuttgart, Germany
-                    community. We are going into our tenth year in 2023 as an organization.
-                    We operate as a non-profit organization with 100% volunteers.
-                    SEBC travels locally and throughout Europe dominating tournaments during
-                    basketball season and competing against over 30 International Clubs annually.
-                    We represent the USA in a positive manner, both athletically and in sportsmanship.
-                    SEBC bridges a gap in the overseas military community for school-age children
-                    who are not afforded the experience of competitive Amateur Athletic Union (AAU)
-                    and middle school sports during their adolescent years due to their parents
-                    serving our Nation abroad. We are also excited to start an Eagles Cheer
-                    program this year!  In addition to basketball and cheer, we require our players
-                    maintain a high grade point average and have no disciplinary problems.
-                    Our goal is to not only give our kids a fighting chance athletically with their
-                    stateside counterparts, but also to build kids with character.{" "}
+                <img className="full_logo" src="/assets/full_logo_cropped.png" />
                 </p>
-            </div>
-            <div class="cards">
-                <CardItems/>
-            </div>
-            <br></br><br></br>
-            <div id="eventsList" >
-            <h2 class="eventsList">Upcoming Events</h2>
-              <ul class="eventsList">
-                {events.map((event) => (
-                  <li key={event.id} class="event" style={{whiteSpace: "pre-line"}}>
-                    <p class="date">{fixDate(event.start.dateTime)}</p>
-                    <div class="info"><h3>{event.summary}</h3>
-                    {event.location && <p>{event.location}</p>}</div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <Footer/>
+                    <div class="title">
+                    <div className="banner"></div>
+                    <div class="title-text">
+                        <h3>Demanding Excellence in Everything We Do</h3>
+                    </div>
+                </div>
+                <div className="Border">
+                    <div className="border_box"></div>
+                </div>
+                <div class="bodyParagraph">
+                    <h1 class="hidden">What We Do</h1>
+                    <br></br>
+                    <img className="photo-collage" src="/assets/photo_collage-two.png" />
+                    <p class="hidden">
+                        The Stuttgart Eagles Basketball Club (SEBC) is made up of Department
+                        of Defense dependents and local youth within the Stuttgart, Germany
+                        community. We are going into our tenth year in 2023 as an organization.
+                        We operate as a non-profit organization with 100% volunteers.
+                        SEBC travels locally and throughout Europe dominating tournaments during
+                        basketball season and competing against over 30 International Clubs annually.
+                        We represent the USA in a positive manner, both athletically and in sportsmanship.
+                        SEBC bridges a gap in the overseas military community for school-age children
+                        who are not afforded the experience of competitive Amateur Athletic Union (AAU)
+                        and middle school sports during their adolescent years due to their parents
+                        serving our Nation abroad. We are also excited to start an Eagles Cheer
+                        program this year!  In addition to basketball and cheer, we require our players
+                        maintain a high grade point average and have no disciplinary problems.
+                        Our goal is to not only give our kids a fighting chance athletically with their
+                        stateside counterparts, but also to build kids with character.{" "}
+                    </p>
+                </div>
+                <div className="card-banner"></div>
+                <div className="cardgrid">
+                    <img className="arrow-photo" src="/assets/arrow.png" />
+                <div class="cards">
+                    <CardItems/>
+                </div>
+                </div>
+                <br></br><br></br>
+                <div id="eventsList" >
+                    <div className="bodyParagraph"><h2>Upcoming Events</h2></div>
+                    <ul class="eventsList">
+                        {events.map((event) => (
+                            <li key={event.id} class="event" style={{whiteSpace: "pre-line"}}>
+                                <p class="date">{fixDate(event.start.dateTime)}</p>
+                                <div class="info"><h3>{event.summary}</h3>
+                                    {event.location && <p>{event.location}</p>}</div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <div className="bodyParagraph"><h2>Gallery</h2></div>
+                <Gallery />
+                <Footer/>
             </div>
         </div>
     );

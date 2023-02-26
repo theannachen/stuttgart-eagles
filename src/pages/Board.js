@@ -58,9 +58,10 @@ const Board = () => {
                 <br></br>
                 <Row gutter={20}>
                     {people.map((board) => (
-                        <Col span={12}>
+                        <Col xs={24} sm={24} md={12} lg={12} xl={8}>
                             <div className="boardcard">
                                 <img className="boardpic" src={board.image}/>
+                                <img className="basketball-icon" src="/assets/basketball-icon-red.png" />
                                 <h2>{board.name}</h2>
                                 <h3>{board.role}</h3>
                                 <br></br>

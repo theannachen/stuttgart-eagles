@@ -8,6 +8,10 @@ import "../pages/Gallery.css";
 
     const photos = [
         {
+            original: "/assets/younger_players.jpg",
+
+        },
+        {
             original: "/assets/waving_flag.jpg",
 
         },
@@ -21,10 +25,6 @@ import "../pages/Gallery.css";
         },
         {
             original: "/assets/happiness.jpg",
-
-        },
-        {
-            original: "/assets/younger_players.jpg",
 
         },
         {
@@ -58,7 +58,12 @@ import "../pages/Gallery.css";
     ]
     class MyGallery extends React.Component {
         render() {
-            return <ImageGallery items={photos} />;
+
+            return (
+                <div className="gallery">
+                <ImageGallery items={photos} />
+                </div>
+            );
         }
     }
 

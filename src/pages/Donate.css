@@ -1,12 +1,68 @@
-.donate-list li, .donate-list h3{
-    text-align: left;
-    font-size: 1.3em;
+
+.main {
+
+}
+
+.cash-card {
+    margin-bottom: 80px;
+    position: relative;
+    left: 50%;
+    background-color: #4147b6;
+    border-radius: 3px;
+    transform: translateX(-50%);
+
 }
 
 .donate-list h3 {
-    font-size: 1.3em;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-color: #272A4B;
-    text-decoration-thickness: 2px;
+    font-family: "Century Gothic";
+    color: #F3F4F5;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-align: center;
 }
+
+.donate-list li{
+    font-family: "Century Gothic";
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-align: start;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+.blocks {
+    z-index: -1;
+}
+
+.block-one {
+    position: absolute;
+    z-index: -1;
+    background-color: #f6f6f6;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    transform: translate(40px, 50px);
+    transition: transform ease 500ms;
+}
+
+.block-two {
+    position: absolute;
+    z-index: -1;
+    background-color: #f6f6f6;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    transform: translate(-40px, -50px);
+    transition: transform ease 500ms;
+}
+
+/*.blocks:hover .block-one {*/
+/*    transform: translate(40%, 120%);*/
+/*}*/
+
+/*.blocks:hover .block-two {*/
+/*    transform: translate(-40%, -120%);*/
+/*}*/
+
