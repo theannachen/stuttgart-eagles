@@ -205,7 +205,7 @@ img.arrow-photo {
 }
 
 .mainCard {
-    font-family: "Century Gothic";
+    font-family: 'Gothic A1', sans-serif;
     color: #F3F4F5;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -214,7 +214,7 @@ img.arrow-photo {
 }
 
 .mainCard h3 {
-    font-family: "Century Gothic";
+    font-family: 'Gothic A1', sans-serif;
     color: #F3F4F5;
     font-size: 1.8em;
     font-weight: 600;
