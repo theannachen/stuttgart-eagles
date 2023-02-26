@@ -8,7 +8,7 @@ import "../pages/Gallery.css";
 
     const photos = [
         {
-            original: "/assets/younger_players.jpg",
+            original: "/assets/younger_players_cropped.png",
 
         },
         {

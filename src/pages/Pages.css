@@ -94,6 +94,14 @@ body {
     padding-bottom: 0px;
 }
 
+img.footer-star {
+    position: absolute;
+    width: 70px;
+    transform: rotate(70deg);
+    right: 50%;
+    left: 50%;
+}
+
 img.eagle-photo {
     position: absolute;
     height: 55px;

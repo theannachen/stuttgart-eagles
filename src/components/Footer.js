@@ -9,6 +9,7 @@ const Footer = () => {
         <Affix>
             <br></br><br></br><br></br><br></br><br></br>
             <div className="footer">
+                <img className="footer-star" src="/assets/star.png" />
                 <h>Contact us: </h>
                 <p> stuttgarteaglesbasketball@googlemail.com <br></br>
                 -Music is credited to T. Powell-</p>
