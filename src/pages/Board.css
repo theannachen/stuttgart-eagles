@@ -1,4 +1,28 @@
 
+.bubble-one {
+    position: absolute;
+    z-index: -1;
+    background-color: #f60013;
+    box-shadow: 0 2px 5px #272A4B;
+    opacity: .5;
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    transform: translate(40%, -10%);
+}
+
+.bubble-two {
+    position: absolute;
+    z-index: -1;
+    background-color: #020ba9;
+    box-shadow: 0 2px 5px #272A4B;
+    opacity: .5;
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+    transform: translate(190%, -90%);
+}
+
 img.boardpic {
     align-content: center;
     width: 280px;
@@ -11,6 +35,12 @@ img.boardpic {
     align-content: center;
 }
 
+img.basketball-icon {
+    position: absolute;
+    z-index: -1;
+    height: 40%;
+    transform: translate(-55%, 100%);
+}
 
 .boardcard h3 {
     transform: translateY(-45%);

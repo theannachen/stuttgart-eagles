@@ -10,10 +10,10 @@ import "boxicons";
 const CardItems = () => {
     const [carditems, setcarditems] = useState([
         {
-            link: "#calander",
-            label: "Play",
+            link: "/board",
+            label: "Meet the Board",
             icon: "basketball",
-            body: "See upcoming events! Support us at games or sign up for tryouts."
+            body: "See the team that made all of this possible."
         },
         {
             link: "/volunteer",
@@ -33,7 +33,7 @@ const CardItems = () => {
             <Row gutter={6} justify="space-around" align="middle" style={{marginBottom: 50}}>
                 {carditems.map((carditems) =>
                     (
-                        <Col span={11}>
+                        <Col xs={12} sm={10} md={10} lg={10} xl={10}>
                             <NavLink to={carditems.link}>
                                 <Card>
                                     <h3>{carditems.label}</h3>

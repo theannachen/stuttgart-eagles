@@ -22,12 +22,13 @@ const Donate = () => {
                     <p>
                         Please use one of the following methods to donate:
                     </p>
+                    <br></br>
                 </div>
 
                 <div className="donate-list">
                     <div class="card">
                         <Row gutter={10} justify="space-around">
-                            <Col span={20}>
+                            <Col xs={23} sm={20}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"> </div>
@@ -53,7 +54,7 @@ const Donate = () => {
                         </Row>
 
                         <Row gutter={10} justify="space-around" align="middle" style={{marginBottom: 8}}>
-                            <Col span={11}>
+                            <Col xs={23} sm={23} md={11} lg={11}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"></div>
@@ -72,7 +73,7 @@ const Donate = () => {
                                 </div>
                             </Col>
 
-                            <Col span={11}>
+                            <Col xs={23} sm={23} md={11} lg={11}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"></div>
@@ -94,7 +95,7 @@ const Donate = () => {
                                 </div>
                             </Col>
 
-                            <Col span={11}>
+                            <Col xs={23} sm={23} md={11} lg={11}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"></div>
@@ -118,7 +119,7 @@ const Donate = () => {
                                 </div>
                             </Col>
 
-                            <Col span={11}>
+                            <Col xs={23} sm={23} md={11} lg={11}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"></div>
@@ -141,7 +142,7 @@ const Donate = () => {
                         </Row>
 
                         <Row gutter={10} justify="space-around">
-                            <Col span={20}>
+                            <Col xs={23} sm={20}>
                                 <div className="cash-card">
                                     <div className="blocks">
                                         <div className="block-one"></div>

@@ -1,29 +1,8 @@
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-content: start;
-    /* margin: 7px 7px 7px 7px; */
-}
-
-img.gallerytemplate {
-    position: absolute;
-}
-
-img.galleryimg {
-    width: 400px;
-    aspect-ratio: auto;
-    box-shadow: 0px 0px 0px #DB3342;
-    transition: box-shadow 300ms;
-}
-
-.image-gallery-image {
-    background-color: #F3F4F5;
-}
-
-img.galleryimg:hover {
-    box-shadow: 0 4px 4px 2px #DB3342;
-
+.gallery {
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 40px;
 }
 

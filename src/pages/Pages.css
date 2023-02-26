@@ -6,6 +6,7 @@
 
 body {
     text-align: center;
+    color: #272A4B;
     font-family: Calibri;
     background-color: rgba(39, 42, 75, .05);
 }
@@ -33,9 +34,15 @@ body {
 }
 
 .bodyParagraph h2 {
+    color: #272A4B;
     font-size: 2.5em;
     font-style: italic;
     -webkit-text-stroke-width: 1.5px;
+}
+
+.bodyParagraph h3 {
+    color: #272A4B;
+    font-size: 1.5em;
 }
 
 
@@ -83,27 +90,30 @@ body {
     transform: translateY(10%);
     padding-bottom: 0px;
 }
+.footer p {
+    padding-bottom: 0px;
+}
+
+img.eagle-photo {
+    position: absolute;
+    height: 55px;
+    transform: translate(-40%, -12%);
+}
 
 #eagle_logo {
     margin-right: auto;
     border-radius: 50px;
-    height: 40%;
-    transform: translateX(-25%);
     transition: transform;
     transition-timing-function: ease;
     transition-duration: 200ms;
-    outline: #DB3342;
-    outline-width: 4px;
 }
 
 #eagle_logo:hover {
     transform: scale(1.05);
-    transform: translateX(-25%);
 }
 
 #eagle_logo:active {
     transform: scale(.98);
-    transform: translateX(-25%);
 }
 
 .aboutus {

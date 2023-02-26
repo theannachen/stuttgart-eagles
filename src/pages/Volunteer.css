@@ -18,26 +18,31 @@
 
 .left {
     text-align: start;
+    margin-right: auto;
 }
 
 .right {
     text-align: end;
+    margin-left: auto;
 }
 
 img.coachingpic {
     width: 100%;
+    max-width: 450px;
     border-radius: 2px;
     box-shadow: 0px 6px 6px #DB3342;
 }
 
 img.boardmempic {
     width: 100%;
+    max-width: 450px;
     border-radius: 2px;
     box-shadow: 0px 6px 6px #DB3342;
 }
 
 img.fundraisepic {
     width: 100%;
+    max-width: 450px;
     border-radius: 2px;
     box-shadow: 0px 6px 6px #DB3342;
 }

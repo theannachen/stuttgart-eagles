@@ -40,10 +40,10 @@
     position: absolute;
     z-index: -1;
     background-color: #f6f6f6;
-    opacity: .4;
+    opacity: .3;
     height: 100%;
     width: 100%;
-    transform: translate(10%, 14%);
+    transform: translate(40px, 50px);
     transition: transform ease 500ms;
 }
 
@@ -51,10 +51,10 @@
     position: absolute;
     z-index: -1;
     background-color: #f6f6f6;
-    opacity: .4;
+    opacity: .3;
     height: 100%;
     width: 100%;
-    transform: translate(-10%, -14%);
+    transform: translate(-40px, -50px);
     transition: transform ease 500ms;
 }
 

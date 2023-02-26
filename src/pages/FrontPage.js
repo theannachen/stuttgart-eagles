@@ -53,7 +53,7 @@ const FrontPage = () => {
                 </div>
                 <div class="bodyParagraph">
                     <h1 class="hidden">What We Do</h1>
-                    <div className="collage-banner"></div>
+                    <br></br>
                     <img className="photo-collage" src="/assets/photo_collage-two.png" />
                     <p class="hidden">
                         The Stuttgart Eagles Basketball Club (SEBC) is made up of Department
@@ -93,6 +93,8 @@ const FrontPage = () => {
                         ))}
                     </ul>
                 </div>
+                <div className="bodyParagraph"><h2>Gallery</h2></div>
+                <Gallery />
                 <Footer/>
             </div>
         </div>
