@@ -8,7 +8,7 @@ import "boxicons";
 // todo: add links, add calendar, add footer, add logo to top
 
 const CardItems = () => {
-    const [carditems, setcarditems] = useState([
+    const carditems = [
         {
             link: "/board",
             label: "Meet the Board",
@@ -27,22 +27,29 @@ const CardItems = () => {
             icon: "dollar",
             body: "Your donations fund tournaments, training materials, and projects."
         }
-    ]);
+    ];
     return (
         <div class="card">
-            <Row gutter={6} justify="space-around" align="middle" style={{marginBottom: 50}}>
+            <Row gutter={6} id="fancyRow" justify="space-around" align="middle" >
+            <Col xs={18} sm={8} md={8} lg={8} xl={8}>
+                <img className="arrow-photo" src="/assets/arrow.png" /></Col>
+                <Col xs={24} sm={15} md={15} lg={15} xl={15} id="secondCol">
+                <Row gutter={6} id="fancyRow" justify="space-around" align="middle" >
                 {carditems.map((carditems) =>
                     (
-                        <Col xs={12} sm={10} md={10} lg={10} xl={10}>
+                        <Col xs={24} sm={12} md={12} lg={12} xl={12}>
                             <NavLink to={carditems.link}>
-                                <Card>
+                                <div class="mainCard">
+                                    <box-icon name={carditems.icon} type='solid' color='#fff' size='lg'></box-icon>
                                     <h3>{carditems.label}</h3>
                                     <p>{carditems.body}</p>
-                                </Card>
+                                </div>
                             </NavLink>
                             <br></br>
                         </Col>
                     ))}
+                    </Row>
+                </Col>
             </Row>
         </div>
     )

@@ -75,7 +75,7 @@ const FrontPage = () => {
                 </div>
                 <div className="card-banner"></div>
                 <div className="cardgrid">
-                    <img className="arrow-photo" src="/assets/arrow.png" />
+                    
                 <div class="cards">
                     <CardItems/>
                 </div>

@@ -153,64 +153,78 @@ img.photo-collage {
 }
 
 .cardgrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
-    gap: 1em;
     background-color: #ff6074;
+    justify-content: center;
     padding:1em 0em 1em 0em;
 }
 
-img.arrow-photo {
+#fancyRow {
     width: 100%;
-    min-height: 250px;
+}
+
+
+img.arrow-photo {
+    max-height: 33em;
+    width: 100%;
     padding-left: 5%;
 }
 
-.ant-card {
-    height: 14em;
+.mainCard {
+    /* width: 25em; */
+    width: 90%;
+    /* height: 15em; */
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.1);
-    border-left: #DB3342;
-    border-right: #DB3342;
+    border-style: solid;
+    border-left: white;
+    border-right: white;
     border-width: 7px;
     animation: slidedown;
     transition: transform, background-color;
     transition-timing-function: ease;
     transition-duration: 200ms;
-
 }
 
-.ant-card:hover {
+
+@media (min-width: 807px) {
+    .mainCard {
+      height: 15em;
+    }
+  }
+
+#secondCol {
+    margin-left: 3%;
+}
+
+.mainCard:hover {
     transform: scale(1.02);
 }
 
-.ant-card:active {
+.mainCard:active {
     transform: scale(.98);
 }
 
-.ant-card-body {
+.mainCard {
     font-family: "Century Gothic";
     color: #F3F4F5;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 5px 2px 5px 2px;
-    position: absolute;
+    padding: 5px 12px 5px 12px;
 
 }
 
-.ant-card-body h3 {
+.mainCard h3 {
     font-family: "Century Gothic";
     color: #F3F4F5;
     font-size: 1.8em;
     font-weight: 600;
 }
 
-.ant-card-body p {
+.mainCard p {
     font-size: 1.3em;
 }
 
-.ant-card-body box-icon {
-    position: absolute;
+.mainCard box-icon {
     height: 50px;
 }
 
